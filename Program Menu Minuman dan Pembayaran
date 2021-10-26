@@ -1,0 +1,114 @@
+// Program Menu Minuman dan Pembayaran//
+#include <iostream>
+using namespace std ;
+int main()
+{   
+                int kode, hrg, jml, byr, tot, kbl;
+                char mad;
+                do
+                {
+                                cout<<"               Apis Cofee            "<<endl;
+                                cout<<"                                     "<<endl;
+                                cout<<"========================================"<<endl;
+                                cout<<""<<endl;
+                                cout<<" ______________________________________ "<<endl;
+                                cout<<"|     Menu Makanan      |      Harga   |"<<endl;
+                                cout<<"|                       |              |"<<endl;
+                                cout<<"|   1. Es Kopi Susu     |  Rp. 18.000  |"<<endl;
+                                cout<<"|   2. Ice Americano    |  Rp. 14.000  |"<<endl;
+                                cout<<"|   3. Caramel Latte    |  Rp. 22.000  |"<<endl;
+                                cout<<"|   4. Macchiato        |  Rp. 19.000  |"<<endl;
+                                cout<<"|   5. Kopi Apis Spesial|  Rp. 25.000  |"<<endl;
+                                cout<<"|_______________________|______________|"<<endl;
+                                cout<<""<<endl;
+                                cout<<"Masukan Pilihan Anda : ";
+                                cin>>kode;
+                                switch (kode)
+                                {
+                                case 1:
+                                cout<<'\n'<<"Es Kopi Susu"<<endl;
+                                hrg=18000;
+                                cout<<"Masukan Jumlah Porsi : ";
+                                cin>>jml;
+                                tot=hrg*jml;
+                                cout<<"Total Hargany        : Rp. "<<tot<<endl;
+                                cout<<"Dibayar              : Rp. ";
+                                cin>>byr;
+                                kbl=byr-tot;
+                                cout<<"Kembali              : Rp. "<<kbl<<endl;
+                                cout<<""<<endl;
+                                cout<<"Masih Ada Yang Lain Y/T : ";
+                                cin>>mad;
+                                break;
+                               
+                                case 2:
+                                cout<<'\n'<<"Ice Americano"<<endl;
+                                hrg=14000;
+                                cout<<"Masukan Jumlah Porsi : ";
+                                cin>>jml;
+                                tot=hrg*jml;
+                                cout<<"Total Hargany        : Rp. "<<tot<<endl;
+                                cout<<"Dibayar              : Rp. ";
+                                cin>>byr;
+                                kbl=byr-tot;
+                                cout<<"Kembali              : Rp. "<<kbl<<endl;
+                                cout<<""<<endl;
+                                cout<<"Masih Ada Yang Lain Y/T : ";
+                                cin>>mad;
+                                break;
+                               
+                                case 3:
+                                cout<<'\n'<<"Caramel Latte"<<endl;
+                                hrg=22000;
+                                cout<<"Masukan Jumlah Porsi : ";
+                                cin>>jml;
+                                tot=hrg*jml;
+                                cout<<"Total Hargany        : Rp. "<<tot<<endl;
+                                cout<<"Dibayar              : Rp. ";
+                                cin>>byr;
+                                kbl=byr-tot;
+                                cout<<"Kembali              : Rp. "<<kbl<<endl;
+                                cout<<""<<endl;
+                                cout<<"Masih Ada Yang Lain Y/T : ";
+                                cin>>mad;
+                                break;
+                               
+                                case 4:
+                                cout<<'\n'<<"Macchiato"<<endl;
+                                hrg=19000;
+                                cout<<"Masukan Jumlah Porsi : ";
+                                cin>>jml;
+                                tot=hrg*jml;
+                                cout<<"Total Hargany        : Rp. "<<tot<<endl;
+                                cout<<"Dibayar              : Rp. ";
+                                cin>>byr;
+                                kbl=byr-tot;
+                                cout<<"Kembali              : Rp. "<<kbl<<endl;
+                                cout<<""<<endl;
+                                cout<<"Masih Ada Yang Lain Y/T : ";
+                                cin>>mad;
+                                break;
+                               
+                                case 5:
+                                cout<<'\n'<<"Kopi Apis Spesial"<<endl;
+                                hrg=25000;
+                                cout<<"Masukan Jumlah Porsi : ";
+                                cin>>jml;
+                                tot=hrg*jml;
+                                cout<<"Total Hargany        : Rp. "<<tot<<endl;
+                                cout<<"Dibayar              : Rp. ";
+                                cin>>byr;
+                                kbl=byr-tot;
+                                cout<<"Kembali              : Rp. "<<kbl<<endl;
+                                cout<<""<<endl;
+                                cout<<"Masih Ada Yang Lain Y/T : ";
+                                cin>>mad;
+                                break;
+                                default:
+                                cout<<"Kode Yang Anda Masukan Tidak Tersedia";
+                                } 
+                }
+                while (mad/='Y');
+                cout<<"Terima Kasih Atas Kunjungan Anda Di Apis Coffee";
+                return 0;
+}
